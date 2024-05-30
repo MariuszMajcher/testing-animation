@@ -105,3 +105,39 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.square {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.square2 {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  width: 10rem;
+  height: 10rem;
+  transform: rotate(45deg);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.square.left {
+  left: 20%;
+  background-color: red;
+}
+
+.square2.left {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: rotate(-45deg);
+  background-color: green;
+}
