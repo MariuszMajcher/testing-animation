@@ -113,7 +113,7 @@ a {
   left: 50%;
   width: 10rem;
   height: 10rem;
-  background-color: white;
+  background-color: pink;
   transition: all 0.3s ease-in-out;
 }
 
@@ -124,7 +124,7 @@ a {
   width: 10rem;
   height: 10rem;
   transform: rotate(45deg);
-  background-color: white;
+  background-color: purple;
   transition: all 0.3s ease-in-out;
 }
 
@@ -140,4 +140,8 @@ a {
   left: 20%;
   transform: rotate(-45deg);
   background-color: green;
+}
+
+.character {
+  position: absolute;
 }

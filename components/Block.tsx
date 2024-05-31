@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Page() {
 
     const [left, setLeft] = useState(false)
-    const characters : string[] = ["a", "b"]
+    const characters : string[] = ["a", "b", "a", "b", "a", "b", "a", "b"]
     const clicked = () => {
         setLeft(!left)
     }
@@ -27,7 +27,12 @@ export default function Page() {
             key={index}
             className={`${"character"} ${left ? "active" : ''} ${!left ? "noncircular" : ''}`}
             style={{
-              transform: left ? `rotate(${angle}deg) translate(${!left ? '1em' : '10em'}) rotate(${ -90  }deg)` : `rotate(${angle*1.5}deg) translate(${!left ?  '3em' : '12em'})`
+              transform: 
+              left ? `rotate(${angle}deg) 
+              translate(${!left ? '1em' : '10em'}) 
+              rotate(${ -90 + angle  }deg)` 
+              : `rotate(${angle*1.5}deg) translate(${!left ?  `${index *2}em` : `${index * 10}em`})`,
+              transition: 'all 3s ease-in-out'
              
             }}
           >
